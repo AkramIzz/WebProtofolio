@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Band</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body {font-family: "Lato", sans-serif}
+	</style>
+
+</head>
+<body>
+	<a href="#" class="w3-hide-medium w3-hide-large w3-margin w3-xxxlarge" style="position:fixed;bottom: 0;right: 0;"><i class="fa fa-chevron-circle-up w3-text-red"></i></a>
+
+	<div class="w3-top w3-hide-small">
+	<div class="w3-bar w3-black w3-large">
+		<a href="#" class="w3-bar-item w3-button w3-hover-red">HOME</a>
+		<a href="#band" class="w3-bar-item w3-button w3-hover-red">BAND</a>
+		<a href="#tour" class="w3-bar-item w3-button w3-hover-red">TOUR</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-hover-red">CONTACT</a>
+		
+		<div class="w3-dropdown-hover ">
+			<a class="w3-button w3-hover-red">MORE <i class="fa fa-caret-down"></i></a>
+			<div class="w3-dropdown-content w3-bar-block">
+				<a href="#" class="w3-bar-item w3-button w3-hover-red">Merchandise</a>
+				<a href="#" class="w3-bar-item w3-button w3-hover-red">Extras</a>
+				<a href="#" class="w3-bar-item w3-button w3-hover-red">Media</a>
+			</div>
+		</div>
+		
+		<a id="searchIcon" class="w3-bar-item w3-right w3-button w3-hover-red" onclick="showSearchBar()"><span class="fa fa-search"></span></a>
+		<form>
+		<input id="searchBar" type="text" name="search" class="w3-bar-item w3-right w3-input w3-animate-opacity" style="display: none;" onblur="hideSearchBar()" onfocusout="hideSearchBar()">
+		</form>
+	</div>
+	</div>
+
+	<div class="w3-display-container w3-center">
+		<img src="hero.jpg" class="w3-image" style="width:100%">
+		<div class="w3-hide-small w3-text-white w3-display-bottommiddle w3-container w3-xlarge w3-padding-32">
+			<h3>Khartoum</h3>
+			<p>The atmosphere in Khartoum is lorem ipsum.</p>
+		</div>
+	</div>
+
+	<div id="band" class="w3-content w3-container w3-center w3-padding-64" style="">
+		<h2>THE BAND</h2>
+		<p class="w3-text-grey">We love music!</p>
+		<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div class="w3-row-padding">
+			<div class="w3-col m4 w3-margin-bottom"><p>Name</p><img src="bandmember.jpg" class='w3-image w3-round'></div>
+			<div class="w3-col m4 w3-margin-bottom"><p>Name</p><img src="bandmember.jpg" class='w3-image w3-round'></div>
+			<div class="w3-col m4 w3-margin-bottom"><p>Name</p><img src="bandmember.jpg" class='w3-image w3-round'></div>
+		</div>
+	</div>
+	
+	<div class="w3-black">
+	<div id="tour" class="w3-content w3-container w3-padding-64" style="">
+		<div class="w3-center">
+			<h2>TOUR DATES</h2>
+			<p class="w3-text-grey">Remember to book your tickets!</p>
+		</div>
+		<ul class="w3-ul w3-margin-bottom w3-white w3-large w3-block">
+			<li class="w3-padding"><p class="w3-text-grey">September<span class="w3-tag w3-red w3-margin-left">Sold out</span></p></li>
+			<li class="w3-padding"><p class="w3-text-grey">October<span class="w3-tag w3-red w3-margin-left">Sold out</span></p></li>
+			<li class="w3-padding"><p class="w3-text-grey">November<span class="w3-badge w3-margin-right w3-right">3</span></p></li>
+		</ul>
+		<div class="w3-row-padding">
+			<div class="w3-third w3-card w3-margin-bottom">
+				<img src="newyork.jpg" class='w3-image w3-hover-opacity'>
+				<div class="w3-container w3-white">
+				<p class="w3-large"><b>New York</b></p>
+				<p class="w3-large">Fri 27 Nov 2016</p>
+				<p class="w3-large">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+				<button class="w3-button w3-black w3-margin-bottom w3-hover-red">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="w3-third w3-card w3-container w3-margin-bottom">
+				<img src="paris.jpg" class='w3-image w3-hover-opacity'>
+				<div class="w3-container w3-white">
+				<p class="w3-large"><b>Paris</b></p>
+				<p class="w3-large">Sat 28 Nov 2016</p>
+				<p class="w3-large">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+				<button class="w3-button w3-black w3-margin-bottom w3-hover-red">Buy Tickets</button>
+				</div>
+			</div>
+			<div class="w3-third w3-card w3-margin-bottom">
+				<img src="sanfran.jpg" class='w3-image w3-hover-opacity'>
+				<div class="w3-container w3-white">
+				<p class="w3-large"><b>San Fransico</b></p>
+				<p class="w3-large">Sun 29 Nov 2016</p>
+				<p class="w3-large">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+				<button class="w3-button w3-black w3-margin-bottom w3-hover-red">Buy Tickets</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div id="contact" class="w3-content w3-container w3-padding-64" style="">
+		<div class="w3-center w3-margin-bottom">
+		<h2>CONTACT US</h2>
+		<p class="w3-text-grey">Fan? Drop a note!</p>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-col m5 w3-margin-bottom w3-margin-right">
+				<p class="w3-padding-large"><span class="fa fa-home w3-margin-right"></span>Chicago, US</p>
+				<p class="w3-padding-large"><span class="fa fa-phone w3-margin-right"></span>Phone: +00 55 99 15</p>
+				<p class="w3-padding-large"><span class="fa fa-home w3-margin-right"></span>Email: email@mail.com</p>
+			</div>
+			<div class="w3-col m5 w3-margin-bottom">
+			<form>
+				<div class="w3-row">
+				<div class="w3-col w3-margin-bottom m6 w3-padding-small"><input type="text" name="name" class="w3-input w3-border" placeholder="Name" required></div>
+				<div class="w3-col w3-margin-bottom m6 w3-padding-small"><input type="email" name="email" class="w3-input w3-border" placeholder="E-Mail" required></div>
+				</div>
+				<textarea name="message" class="w3-input w3-border w3-margin-bottom" placeholder="Message" required style="padding-right:16px"></textarea>
+				<input type="submit" name="submit" value="Send" class="w3-button w3-black w3-hover-red w3-right">
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+		<i class="fa fa-facebook-official w3-hover-text-red"></i>
+		<i class="fa fa-instagram w3-hover-text-red"></i>
+		<i class="fa fa-snapchat w3-hover-text-red"></i>
+		<i class="fa fa-pinterest-p w3-hover-text-red"></i>
+		<i class="fa fa-twitter w3-hover-text-red"></i>
+		<i class="fa fa-linkedin w3-hover-text-red"></i>
+		<p class="w3-medium">Design by <a href="#" target="_blank">Spark</a></p>
+	</footer>
+
+	<script type="text/javascript">
+		function showSearchBar() {
+			document.getElementById('searchBar').style.display = "block";
+			document.getElementById('searchBar').focus()
+			document.getElementById('searchIcon').style.display = "none";
+		}
+
+		function hideSearchBar() {
+			document.getElementById('searchBar').style.display = "none";
+			document.getElementById('searchIcon').style.display = "block"
+		}
+	</script>
+
+</body>
+</html>

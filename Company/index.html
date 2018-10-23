@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<style>
+		body,h1,h2,h3,h4,h5 {
+			font-family: "Poppins", palatino, garamond, georgia;
+		}
+		h1,h2,h3,h4,h5 {
+			font-weight: bold;
+		}
+		body {font-size:16px;}
+		.w3-half img{margin-top:16px;opacity:0.8;cursor:pointer}
+		.w3-half img:hover{opacity:1}
+		.w3-sidebar a {
+			text-decoration: none;
+			font-size: 1em;
+			font-weight: bold;
+		}
+		.w3-sidebar h1 {
+			font-size:2em;
+			font-weight: bold;
+		}
+		.large {
+			font-size: 4em;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top w3-bar w3-hide-large w3-red">
+		<span class="w3-bar-item w3-xlarge"><a onclick="showNavBar()" class="w3-margin-right w3-button">☰</a>Company Name</span>
+	</div>
+
+	<div id="navbar" class="w3-sidebar w3-red w3-top w3-hide-large w3-animate-opacity" style="display:none;width: 44%">
+		<div class="w3-padding w3-padding-32">
+			<h1 class="w3-margin large" style="padding-bottom:1.5em;padding-top:1.5em">Company<br>Name</h1>
+			<div class="w3-bar-block">
+				<a href="#home" class="w3-bar-item w3-hover-white">Home</a>
+				<a href="#showcase" class="w3-bar-item w3-hover-white">Showcase</a>
+				<a href="#services" class="w3-bar-item w3-hover-white">Services</a>
+				<a href="#designers" class="w3-bar-item w3-hover-white">Designers</a>
+				<a href="#packages" class="w3-bar-item w3-hover-white">Packages</a>
+				<a href="#contact" class="w3-bar-item w3-hover-white">Contact</a>
+			</div>
+		</div>
+
+		<div onclick="hideNavBar()" id="overlay" class="w3-overlay" style="margin-left:44%;width:56%"></div>
+	</div>
+
+	<div class="w3-sidebar w3-collapse w3-animate-left w3-red w3-top w3-hide-small w3-hide-medium" style="width: 22%">
+		<div class="w3-padding w3-padding-32">
+			<h1 class="w3-margin large" style="padding-bottom:1.5em;padding-top:1.5em">Company<br>Name</h1>
+			<div class="w3-bar-block">
+				<a href="#home" class="w3-bar-item w3-hover-white">Home</a>
+				<a href="#showcase" class="w3-bar-item w3-hover-white">Showcase</a>
+				<a href="#services" class="w3-bar-item w3-hover-white">Services</a>
+				<a href="#designers" class="w3-bar-item w3-hover-white">Designers</a>
+				<a href="#packages" class="w3-bar-item w3-hover-white">Packages</a>
+				<a href="#contact" class="w3-bar-item w3-hover-white">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-container w3-padding-16 w3-main" style="margin-left: 25%;margin-top: 80px">
+		<h1 id="home" class="large">Interior Design</h1>
+		
+		<div class="w3-margin-bottom">
+			<h2 id="showcase" class="w3-xxxlarge w3-text-red">Showcase.</h2>
+			<div class="w3-round-large w3-red" style="width:64px;height:8px"></div>
+
+			<div class="w3-row-padding">
+				<div class="w3-col w3-half">
+					<img src="Interior1.jpg" class="w3-image">
+					<img src="Interior3.jpg" class="w3-image">
+					<img src="Interior5.jpg" class="w3-image">
+				</div>
+				<div class="w3-col w3-half">
+					<img src="Interior2.jpg" class="w3-image">
+					<img src="Interior4.jpg" class="w3-image">
+					<img src="Interior6.jpg" class="w3-image">
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-padding-64">
+			<h2 id="services" class="w3-xxxlarge w3-text-red">Services.</h2>
+			<div class="w3-round-large w3-red" style="width:64px;height:8px"></div>
+
+			<p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+
+			<p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="w3-padding-64">
+			<h2 id="designers" class="w3-xxxlarge w3-text-red">Designers.</h2>
+			<div class="w3-round-large w3-red" style="width:64px;height:8px"></div>
+
+			<p>The best team in the world.</p>
+
+			<p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p style="font-weight: bold">Our designers are thoughtfully chosen:</p>
+			<div class="w3-row-padding">
+				<div class="w3-col m4">
+					<div class="w3-card">
+						<img src="team2.jpg" class="w3-image" style="width:100%">
+						<div class="w3-container">
+						<h4>John Doe</h4>
+						<p class="w3-text-grey">CEO & Founder</p>
+						<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-col m4">
+					<div class="w3-card">
+						<img src="team1.jpg" class="w3-image" style="width:100%">
+						<div class="w3-container">
+						<h4>John Doe</h4>
+						<p class="w3-text-grey">Designer</p>
+						<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-col m4">
+					<div class="w3-card">
+						<img src="team3.jpg" class="w3-image" style="width:100%">
+						<div class="w3-container">
+						<h4>John Doe</h4>
+						<p class="w3-text-grey">Architect</p>
+						<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-padding-64">
+			<h2 id="packages" class="w3-xxxlarge w3-text-red">Packages.</h2>
+			<div class="w3-round-large w3-red" style="width:64px;height:8px"></div>
+
+			<p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+
+			<div class="w3-row-padding">
+				<div class="w3-col m6 w3-margin-bottom">
+					<div class="w3-card">
+						<div class="w3-grey w3-center w3-padding-16 w3-text-white w3-xlarge">
+						<p>Basic</p>
+						</div>
+						<ul class="w3-ul w3-light-grey w3-center w3-large">
+							<li><p>Floorplanning</p></li>
+							<li><p>10 Hours Support</p></li>
+							<li><p>Photography</p></li>
+							<li><p>20% Furniture Discount</p></li>
+							<li><p>Good Deals</p></li>
+							<li class="w3-padding-16"><p class="w3-xxlarge">$199<br><span class="w3-medium w3-text-grey">per room</span></p></li>
+							<li><button class="w3-button w3-margin w3-grey">Sign Up</button></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="w3-col m6">
+					<div class="w3-card">
+						<div class="w3-red w3-center w3-padding-16 w3-text-white w3-xlarge">
+						<p>Basic</p>
+						</div>
+						<ul class="w3-ul w3-light-grey w3-center w3-large">
+							<li><p>Floorplanning</p></li>
+							<li><p>100 Hours Support</p></li>
+							<li><p>Photography</p></li>
+							<li><p>30% Furniture Discount</p></li>
+							<li><p>Better Deals</p></li>
+							<li class="w3-padding-16"><p class="w3-xxlarge">$250<br><span class="w3-medium w3-text-grey">per room</span></p></li>
+							<li><button class="w3-button w3-margin w3-red">Sign Up</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-padding-64">
+			<h2 id="contact" class="w3-xxxlarge w3-text-red">Contact.</h2>
+			<div class="w3-round-large w3-red" style="width:64px;height:8px"></div>
+
+			<p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+			<form class="w3-padding">
+				<label class="w3-margin">Name</label>
+				<input class="w3-input w3-border w3-margin" type="text" name="name" required>
+				<label class="w3-margin">Email</label>
+				<input class="w3-input w3-border w3-margin" type="email" name="email" required>
+				<label class="w3-margin">Message</label>
+				<textarea class="w3-input w3-border w3-margin" name="message" required></textarea>
+				<input class="w3-button w3-block w3-red w3-margin" type="submit" name="submit">
+			</form>
+		</div>
+
+		<div class="w3-padding-64 w3-right">
+			<p class="w3-text-red">Design By <a href="#">Spark</a></p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function showNavBar() {
+			document.getElementById('navbar').style.display = 'block';
+			document.getElementById('overlay').style.display = 'block';
+		}
+		function hideNavBar() {
+			document.getElementById('navbar').style.display = "none";
+			document.getElementById('overlay').style.display = "none";
+		}
+	</script>
+</body>
+</html>
